@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Graphing Rocks</title>
+
+        <!--- Graph Styles --->
+        <link href="css/graph_view.css" rel="stylesheet" type="text/css" />
+
+        <!-- External Dependencies -->
+        <script src="js/lib/jquery-1.7.1.min.js"></script>
+        <script src="js/lib/underscore-min.js"></script>
+        <script src="js/lib/accounting.min.js"></script>
+
+        <!---HighChars (NOT YET BEING USED - that's your job :) -->
+        <script src="js/lib/highcharts.js"></script>
+
+        <!-- Google Charts -->
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+        <script>
+
+            //this is our namespace to put all global modules - to avoid putting anything directly into the window scope
+            window._rr = {};
+
+        </script>
+
+        <!-- modules below get added to the window._rr name space -->
+
+        <!-- for often-used math methods-->
+        <script src="js/math.js"></script>
+
+        <!-- for manipulating native dom elements without jQuery-->
+        <script src="js/dom.js"></script>
+
+        <!-- mainly for formatting numbers -->
+        <script src="js/format.js"></script>
+
+        <!-- helper methods used by all of our graphing components that use Google Visualization-->
+        <script src="js/graph_helper.js"></script>
+
+        <!-- wrapper for Google's series graph rendering-->
+       <!-- <script src="js/series_graph.js"></script>-->
+        <script src="js/series_graph_v2.js"></script>
+
+        <!-- where we call our rendering components -->
+        <script src="js/view.js"></script>
+
+    </head>
+
+    <body>
+
+        <!-- this is where we are putting the graph -->
+        <div id="container" style="width: 300px;"></div>
+
+    </body>
+
+</html>
